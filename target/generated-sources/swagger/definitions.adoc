@@ -1,0 +1,58 @@
+
+[[_definitions]]
+== Definitions
+
+[[_apierror]]
+=== ApiError
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**codes** +
+__optional__|< string > array
+|**message** +
+__optional__|string
+|===
+
+
+[[_hogeuser]]
+=== HogeUser
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**dateOfBirth** +
+__optional__|string (date)
+|**firstName** +
+__optional__|string
+|**id** +
+__optional__|integer (int64)
+|**lastName** +
+__optional__|string
+|**middleName** +
+__optional__|string
+|**siblings** +
+__optional__|integer (int32)
+|===
+
+
+[[_hogeuserinput]]
+=== HogeUserInput
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**dateOfBirth** +
+__optional__|string (date)
+|**firstName** +
+__optional__|string
+|**lastName** +
+__optional__|string
+|**middleName** +
+__optional__|string
+|**siblings** +
+__optional__|integer (int32)
+|===
+
+
+

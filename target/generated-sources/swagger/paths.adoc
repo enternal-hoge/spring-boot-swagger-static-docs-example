@@ -1,0 +1,128 @@
+
+[[_paths]]
+== Paths
+
+[[_saveusingpost]]
+=== save
+....
+POST /api/hoge-user
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**user** +
+__required__|user|<<_hogeuserinput,HogeUserInput>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Success|< <<_hogeuser,HogeUser>> > array
+|**400**|Bad request|< <<_apierror,ApiError>> > array
+|**500**|Internal Server Error|< <<_apierror,ApiError>> > array
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* hoge-user-controller
+
+
+[[_findallusingget]]
+=== findAll
+....
+GET /api/hoge-user
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4,.^2"]
+|===
+|Type|Name|Description|Schema|Default
+|**Query**|**page** +
+__optional__|Page number of the results you want to fetch|integer (int32)|`1`
+|**Query**|**size** +
+__optional__|Total amount of elements on a specific page|integer (int32)|`10`
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Success +
+**Headers** :  +
+`X-Users-Total` (integer (int64)) : Total number of users that can be found.|< <<_hogeuser,HogeUser>> > array
+|**400**|Bad request|< <<_apierror,ApiError>> > array
+|**500**|Internal Server Error|< <<_apierror,ApiError>> > array
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* hoge-user-controller
+
+
+[[_findoneusingget]]
+=== findOne
+....
+GET /api/hoge-user/{id}
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**id** +
+__optional__|The unique identifier of the hoge you prefer to fetch|integer (int64)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Success|< <<_hogeuser,HogeUser>> > array
+|**400**|Bad request|< <<_apierror,ApiError>> > array
+|**500**|Internal Server Error|< <<_apierror,ApiError>> > array
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* hoge-user-controller
+
+
+

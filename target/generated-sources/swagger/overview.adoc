@@ -1,0 +1,25 @@
+= Hoge User API
+
+
+[[_overview]]
+== Overview
+API for fetching hoge related information
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0.0
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost
+__BasePath__ : /
+
+
+=== Tags
+
+* hoge-user-controller : Hoge User Controller
+
+
+
