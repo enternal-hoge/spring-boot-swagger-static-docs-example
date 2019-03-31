@@ -13,7 +13,7 @@ check out codes of this repository.
 
 ## browse output file.
 
-open your browser following file.
+open file your browser.
 ```
 ./target/generated-sources/swagger-html/inde.html
 ```
